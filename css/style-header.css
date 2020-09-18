@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+}
+header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 22rem;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+header section h1 {
+    color: rgb(47, 116, 180);
+    font: 7em 'Process-registration';
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing:0.5rem;
+    margin: 2rem 0;
+}
+
+.header-container span {
+    display: inline-block;
+    font-size: 1rem;
+    color: white;
+    margin: 1rem 2rem;
+    border: none;
+    border-radius: 7px;
+    background: rgb(88, 155, 255);
+    padding: 0.7rem 2.3rem;
+}
+.header-container span:hover {
+    cursor: pointer;
+}
+
+#slide {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#slide .carousel-item>div {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}

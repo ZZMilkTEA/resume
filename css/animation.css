@@ -1,0 +1,19 @@
+@keyframes moveup {
+    from {
+        top: 50px;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+.before-enter{
+    position: relative;
+    opacity: 0;
+}
+.enter {
+    position: relative;
+    animation: moveup 1s;
+}

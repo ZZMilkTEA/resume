@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>张乃川的简历页面</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/process" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-header.css" rel="stylesheet">
+    <link href="css/style-projects.css" rel="stylesheet">
+    <link href="css/animation.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="css/swiper.css" rel="stylesheet">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"> </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
+    <script src="echarts/echarts-en.js"></script>
+</head>
+<body>
+    <main>
+        <article>
+            <div class="swiper-container" id="main-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <header>
+                                <div id="slide" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item">
+                                          <div class="d-block w-100" style="background-image: url('assets/微仿Microsoft Fluent Design System图标.jpg');"></div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class="d-block w-100" style="background-image: url('assets/微仿Microsoft\ Fluent\ Design\ System图标（透明版本）.jpg');"></div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class="d-block w-100" style="background-image: url('assets/发光地面改.jpg');"></div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class="d-block w-100" style="background-image: url('assets/发光的球=\ =.jpg');"></div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class="d-block w-100" style="background-image: url('assets/烟雾.jpg');"></div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class="d-block w-100" style="background-image: url('assets/抽象针式1.jpg');"></div>
+                                      </div>
+                                      <div class="carousel-item active">
+                                        <div class="d-block w-100" style="background-image: url('assets/抽象针式MIKU.jpg');"></div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class="d-block w-100" style="background-image: url('assets/马克杯2.jpg');"></div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class="d-block w-100" style="background-image: url('assets/低模冰山场景.jpg');"></div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <section class="header-container">
+                                    <h1>ZZMilkTEA</h1>
+                                    <h3>一位正在求职的软件开发者</h3>
+                                    <div>
+                                        <span>关于我</span>
+                                        <span>我的项目</span>
+                                    </div>
+                                </section>
+                            </header>
+                        </div>
+                        <div class="swiper-slide">
+                            <section id="about-me">
+                                <h1>关于我</h1>
+                                <div><img class="avatar" src="assets/golang rides php.png" ></div>
+                                <p>我叫张乃川，22岁，目前住在南京，于2020年6月在南京林业大学的计算机科学于技术专业本科毕业。目前正在求职，自己做过一些全栈项目，前后端的开发经验都有。现在也在努力自学前端。</p>
+                                <p>希望能在前端方向码出自己想要的世界！Hello,world！</p>
+                            </section>
+                        </div>
+                        <div class="swiper-slide">
+                            <section>
+                                <h1>求职意向</h1>
+                                <div class="post-container">
+                                    <div class="post">
+                                        <h3>前端开发</h3>
+                                        <div class="icon"><i class="fab fa-html5 fa-10x"></i></div>
+                                        <p>利用Vue或React的MVVM框架，贯彻组件/模块化、工程化的思想，从事web前端开发的工作</p>
+                                        <p>更加喜爱可视化方向</p>
+                                    </div>
+                                    <div class="post">
+                                        <h3>后端开发</h3>
+                                        <div class="icon"><i class="fas fa-terminal fa-7x"></i></div>
+                                        <p>我也能胜任后端。能抽象后端逻辑，利用Java或Golang语言，完成后端的开发</p>
+                                        <p>更偏爱使用Golang</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-container" id="swiper-container-my-skills">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                    <section id="my-skills">
+                                        <h1>我的技能</h1>
+                                        <div class="skill-container">
+                                            <div class="skill">
+                                                <h3>计算机通用技能</h3>
+                                                <div class="skill-echarts" id="computer-skill"></div>
+                                            </div>
+                                            <div class="skill">
+                                                <h3>前端开发技能</h3>
+                                                <div class="skill-echarts" id="front-end-skill"></div>
+                                            </div>
+                                            <div class="skill">
+                                                <h3>后端开发技能</h3>
+                                                <div class="skill-echarts" id="back-end-skill"></div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                   </div>
+                                </div>
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-container" id="swiper-container-my-projects">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                    <section id="my-projects">
+                                        <h1>我的项目</h1>
+                                        <div class="project-container">
+                                            <div class="project">
+                                                <div class="date">
+                                                    <p>04/2020</p>
+                                                    <p>-</p>
+                                                    <p>05/2020</p>
+                                                </div>
+                                                <div class="link-line"></div>
+                                                <div class="description">
+                                                    <h4>音视频播放门户网站</h4>
+                                                    <div class="position">设计、开发、部署、维护</div>
+                                                    <dl class="info">
+                                                        <div class="entry">
+                                                            <dt>项目内容</dt>
+                                                            <dd>毕设项目。实现一个音视频门户网站，其具有音视频的上传、审核、点播、举报、评论等功能。有普通的弹幕显示和音频可视化功能。使用前后端分离架构</dd>
+                                                        </div>
+                                                        <div class="entry">
+                                                            <dt>技术栈</dt>
+                                                            <dd>Golang, Gin, REST api, Vue, Redis, Docker, Nginx, Mysql</dd>
+                                                        </div>
+                                                        <div class="entry">
+                                                            <dt>个人职责</dt>
+                                                            <dd>个人独立设计开发部署维护，实现上述功能</dd>
+                                                        </div>
+                                                        <div class="entry">
+                                                            <dt>项目成就</dt>
+                                                            <dd>此毕设项目在学校获得了优秀（90+）的成绩，并上线可投入使用</dd>
+                                                        </div>
+                                                        <div class="entry">
+                                                            <dt>项目链接</dt>
+                                                            <dd><a href="http://media-website.r3mix4lles.cn:9999/#/" target="_blank">http://media-website.r3mix4lles.cn:9999/#/</a></dd>
+                                                        </div>
+                                                        <div class="entry">
+                                                            <dt>个人收获</dt>
+                                                            <dd>个人独立设计开发部署维护，实现上述功能</dd>
+                                                        </div>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            <div class="project">
+                                                <div class="date">
+                                                    <p>01/07/2020</p>
+                                                    <p>-</p>
+                                                    <p>至今</p>
+                                                </div>
+                                                <div class="link-line"></div>
+                                                <div class="description">
+                                                    <h4>学生课时管理系统</h4>
+                                                    <div class="position">需求沟通、设计、开发、部署、维护</div>
+                                                    <dl class="info">
+                                                        <div class="entry">
+                                                            <dt>项目内容</dt>
+                                                            <dd>实现学生客户的课时查询和教师进行划课时的功能，其包括学生信息的管理和班级的管理，目前目标用户量为五百人以内</dd>
+                                                        </div>
+                                                        <div class="entry">
+                                                            <dt>技术栈</dt>
+                                                            <dd>Golang, Gin, REST api, Vue, Docker, Nginx, Mysql</dd>
+                                                        </div>
+                                                        <div class="entry">
+                                                            <dt>个人职责</dt>
+                                                            <dd>与客户沟通需求，个人独立设计开发部署维护，实现上述功能</dd>
+                                                        </div>
+                                                        <div class="entry">
+                                                            <dt>项目成就</dt>
+                                                            <dd>投入生产环境，正常运行</dd>
+                                                        </div>
+                                                        <div class="entry">
+                                                            <dt>个人收获</dt>
+                                                            <dd>是首次开发投入到实际商业使用的系统。项目进行期间经历了与客户反复沟通需求，以及用户反馈bug并修复的过程</dd>
+                                                        </div>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            <div class="project">
+                                                <div class="date">
+                                                    <p>01/08/2020</p>
+                                                    <p>-</p>
+                                                    <p>至今</p>
+                                                </div>
+                                                <div class="link-line"></div>
+                                                <div class="description">
+                                                    <h4>社交博客系统</h4>
+                                                    <div class="position">前端开发负责人，后端开发协助者</div>
+                                                    <dl class="info">
+                                                        <div class="entry">
+                                                            <dt>项目内容</dt>
+                                                            <dd>实现一个带有社交功能的博客系统。目前处于开发阶段</dd>
+                                                        </div>
+                                                        <div class="entry">
+                                                            <dt>技术栈</dt>
+                                                            <dd>Java Spring, Mybatis, Nacos, Redis, REST api, Vue</dd>
+                                                        </div>
+                                                        <div class="entry">
+                                                            <dt>个人职责</dt>
+                                                            <dd>负责系统前端网站的技术选型、代码仓库管理、人员分配、核心代码编写、项目文档编写。并参与部分业务逻辑的讨论以及部分后端代码 、技术的协助</dd>
+                                                        </div>
+                                                        <div class="entry">
+                                                            <dt>项目成就</dt>
+                                                            <dd>此毕设项目在学校获得了优秀（90+）的成绩，并上线可投入使用</dd>
+                                                        </div>
+                                                        <div class="entry">
+                                                            <dt>项目仓库</dt>
+                                                            <dd><a href="https://gitee.com/DistributedTrident/distrident-dolphin" target="_blank">https://gitee.com/DistributedTrident/distrident-dolphin</a></dd>
+                                                        </div>
+                                                        <div class="entry">
+                                                            <dt>个人收获</dt>
+                                                            <dd>第一次接触团队合作开发，对Git有更深的认识，提升自己的前端开发经验</dd>
+                                                        </div>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                   </div>
+                                </div>
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <section id="interest">
+                                <h1>我的兴趣</h1>
+                                <div class="interest-container">
+                                    <span>视频剪辑与特效</span>
+                                    <span>编曲</span>
+                                    <span>架子鼓</span>
+                                    <span>编程</span>
+                                    <span>三维建模与渲染</span>
+                                    <span>动画制作</span>
+                                    <span>绘画与平面设计</span>
+                                    <span>电子游戏</span>
+                                    <span>赛博朋克与蒸汽朋克文化</span>
+                                    <span>桌游</span>
+                                </div>
+                                <p>……</p>
+                            </section>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div><!--分页器。如果放置在swiper-container外面，需要自定义样式。-->
+                </div>
+        </article>
+    </main>
+    <footer>
+        <address>
+            <a href="https://github.com/ZZMilkTEA" target="_blank">我的github</a>
+            <a href="https://gitee.com/zzmilktea" target="_blank">我的gitee</a>
+            <a href="http://www.zzmilktea.codes/" target="_blank">我的Blog</a>
+        </address>
+    </footer>
+    <script src="https://kit.fontawesome.com/14e616173f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/skills.js"></script>
+    <script type="text/javascript" src="js/animation.js"></script>
+    <script type="text/javascript" src="js/swiper.js"></script>
+</body>
