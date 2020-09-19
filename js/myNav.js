@@ -1,8 +1,8 @@
+let bullets = $("nav .nav-bullet");
 let navCallback = function(entries, observer) {
     entries.forEach((entry) => {
+        let id = entry.target.id;
         if (entry.isIntersecting) {
-            let id = entry.target.id;
-            let bullets = $("nav .nav-bullet");
             bullets.removeClass("active");
             switch (id) {
                 case 'about-me': bullets.eq(0).addClass("active");break;
@@ -10,12 +10,16 @@ let navCallback = function(entries, observer) {
                 case 'my-skills': bullets.eq(2).addClass("active");break;
                 case 'my-projects': bullets.eq(3).addClass("active");break;
                 case 'interest': bullets.eq(4).addClass("active");break;
-
             }
-
             // observer.unobserve(entry.target);
         } else {
-
+            switch (id) {
+                case 'about-me': bullets.eq(0).removeClass("active");break;
+                case 'career-objective': bullets.eq(1).removeClass("active");break;
+                case 'my-skills': bullets.eq(2).removeClass("active");break;
+                case 'my-projects': bullets.eq(3).removeClass("active");break;
+                case 'interest': bullets.eq(4).removeClass("active");break;
+            }
         }
     });
 }

@@ -7,7 +7,7 @@ section#my-projects {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .project .date {
@@ -33,6 +33,7 @@ section#my-projects {
 }
 
 .project .description {
+    word-break:break-all;
     box-sizing: border-box;
     width: 60%;
     border: solid;
@@ -40,7 +41,7 @@ section#my-projects {
     border-radius: 10px;
     padding: 3%;
     box-shadow: 10px 10px 15px -3px rgba(0, 0, 0, 0.09);
-    
+
 }
 
 .project h4 {

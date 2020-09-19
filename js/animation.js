@@ -5,7 +5,6 @@ let callback = function(entries, observer) {
             entry.target.classList.add('enter');
             // observer.unobserve(entry.target);
         } else {
-
             entry.target.classList.remove('enter');
             entry.target.classList.add('before-enter');
         }
